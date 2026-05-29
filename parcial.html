@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesparcial.css">
+    <title>Formulario de Registración - Parcial</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+            <h1>Inscripcion al Curso</h1>
+            <p>complete el formulario con sus datos</p>
+        </div>
+        <!-- formulario -->
+         <div class="formulario">
+            <div class="campo">
+                <!--NOMBREYAPELLIDO-->
+                <label>Nombre y Apellido</label>
+                <input type="text" id="nombre" placeholder="ingrese su nombre">
+                <p id="errorNombre" class="error"></p>
+         </div>
+         <div class="campo">
+            <label>DNI</label> 
+            <input type="text" id="dni"  placeholder="ingrese su DNI deben ser 8 digitos">
+            <p id="errorDni"  class="error"></p>
+        </div>
+        <!--fecha-->
+        <div class="campo">
+            <label>fecha de nacimiento</label> 
+            <input type="date" id="fecha"  placeholder="Debe ser mayor de 18">
+            <p id="errorFecha" class="error"></p>
+        </div>
+        <div class="botones">
+            <button onclick="registrar()">
+                Enviar
+            </button>
+            <button id="btnPreguntas" onclick="hacerPreguntas()">
+                Preguntas
+            </button>
+        </div>
+        <!--mensaje-->
+        <div id="mensajeExito"></div>
+        <!--respuesya-->
+        <div id="respuestas"></div>
+    </div>
+    <script src="parcialscript.js"></script>
+</body>
+</html>
